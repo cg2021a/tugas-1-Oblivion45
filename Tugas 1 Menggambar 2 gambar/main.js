@@ -3,6 +3,7 @@ function main() {
     var gl = canvas.getContext('webgl');
 
     const object_aquarium = {
+        //Titik bagian atas aquarium
         line_top_color: [0.945, 0.945, 0.945],
         line_top_a: [-0.85, 1],
         line_top_b: [-1, 0.8],
@@ -12,19 +13,22 @@ function main() {
         line_top_f: [-0.25, 0.9],
         line_top_g: [-0.75, 0.9],
         line_top_h: [-0.7, 1],
-
+      
+        // Titik gambar bagian atas-tengah aquarium
         line_top_mid_color: [0, 0, 1],
         line_top_mid_a: [-1, 0.8],
         line_top_mid_b: [0, 0.8],
         line_top_mid_c: [0, 0.7],
         line_top_mid_d: [-1, 0.7],
 
+        // Titik gambar kaca tengah aquarium
         line_mid_color: [0.945, 0.945, 0.945],
         line_mid_a :[-0.99,0.7],
         line_mid_b :[-0.01,0.7],
         line_mid_c :[-0.05,-0.5],
         line_mid_d :[-0.95,-0.5],
 
+        // Titik gambar bagian bawah aquarium
         line_bot_color: [0, 0, 1],
         line_bot_a:[-0.95,-0.5],
         line_bot_b:[-0.05,-0.5],
@@ -34,6 +38,8 @@ function main() {
 
 
     const object_aquarium_2 = {
+
+        // Titik penutup atas akuarium
         line_top_color: [0.945, 0.945, 0.945],
         line_top_a: [0.15, 1],
         line_top_b: [0, 0.6],
@@ -44,12 +50,14 @@ function main() {
         line_top_g: [0.875, 0.7],
         line_top_h: [0.8, 0.9],
 
+        // Titik gambar kaca tengah akuarium
         line_mid_color: [0,0,1],
         line_mid_a:[0, 0.6],
         line_mid_b:[1, 0.6],
         line_mid_c:[0.95, -0.2],
         line_mid_d:[0.05, -0.2],
 
+        // Titik gambar bagian bawah akuarium
         line_bot_color: [0.945, 0.945, 0.945],
         line_bot_a:[0.05, -0.2],
         line_bot_b:[0.95, -0.2],
@@ -63,42 +71,42 @@ function main() {
         ...object_aquarium.line_top_g, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_a, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_b, ...object_aquarium.line_top_color,
-        ...object_aquarium.line_top_g, ...object_aquarium.line_top_color, // 30
+        ...object_aquarium.line_top_g, ...object_aquarium.line_top_color,
 
         ...object_aquarium.line_top_b, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_g, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_f, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_b, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_c, ...object_aquarium.line_top_color,
-        ...object_aquarium.line_top_f, ...object_aquarium.line_top_color, // 60
+        ...object_aquarium.line_top_f, ...object_aquarium.line_top_color,
 
         ...object_aquarium.line_top_d, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_e, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_f, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_d, ...object_aquarium.line_top_color,
         ...object_aquarium.line_top_c, ...object_aquarium.line_top_color,
-        ...object_aquarium.line_top_f, ...object_aquarium.line_top_color, // 90
+        ...object_aquarium.line_top_f, ...object_aquarium.line_top_color,
 
         ...object_aquarium.line_top_mid_a, ...object_aquarium.line_top_mid_color,
         ...object_aquarium.line_top_mid_b, ...object_aquarium.line_top_mid_color,
         ...object_aquarium.line_top_mid_c, ...object_aquarium.line_top_mid_color,
         ...object_aquarium.line_top_mid_a, ...object_aquarium.line_top_mid_color,
         ...object_aquarium.line_top_mid_d, ...object_aquarium.line_top_mid_color,
-        ...object_aquarium.line_top_mid_c, ...object_aquarium.line_top_mid_color, // 120
+        ...object_aquarium.line_top_mid_c, ...object_aquarium.line_top_mid_color,
 
         ...object_aquarium.line_mid_a, ...object_aquarium.line_mid_color,
         ...object_aquarium.line_mid_b, ...object_aquarium.line_mid_color,
         ...object_aquarium.line_mid_c, ...object_aquarium.line_mid_color,
         ...object_aquarium.line_mid_a, ...object_aquarium.line_mid_color,
         ...object_aquarium.line_mid_d, ...object_aquarium.line_mid_color,
-        ...object_aquarium.line_mid_c, ...object_aquarium.line_mid_color, // 150
+        ...object_aquarium.line_mid_c, ...object_aquarium.line_mid_color,
 
         ...object_aquarium.line_bot_a, ...object_aquarium.line_bot_color,
         ...object_aquarium.line_bot_b, ...object_aquarium.line_bot_color,
         ...object_aquarium.line_bot_c, ...object_aquarium.line_bot_color,
         ...object_aquarium.line_bot_a, ...object_aquarium.line_bot_color,
         ...object_aquarium.line_bot_d, ...object_aquarium.line_bot_color,
-        ...object_aquarium.line_bot_c, ...object_aquarium.line_bot_color, //180
+        ...object_aquarium.line_bot_c, ...object_aquarium.line_bot_color,
 
         // gambar kanan
         ...object_aquarium_2.line_top_a, ...object_aquarium_2.line_top_color,
@@ -106,42 +114,42 @@ function main() {
         ...object_aquarium_2.line_top_f, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_a, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_e, ...object_aquarium_2.line_top_color,
-        ...object_aquarium_2.line_top_f, ...object_aquarium_2.line_top_color, // 210
+        ...object_aquarium_2.line_top_f, ...object_aquarium_2.line_top_color,
 
         ...object_aquarium_2.line_top_a, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_d, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_h, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_a, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_e, ...object_aquarium_2.line_top_color,
-        ...object_aquarium_2.line_top_h, ...object_aquarium_2.line_top_color, // 240
+        ...object_aquarium_2.line_top_h, ...object_aquarium_2.line_top_color,
 
         ...object_aquarium_2.line_top_d, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_h, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_g, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_d, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_c, ...object_aquarium_2.line_top_color,
-        ...object_aquarium_2.line_top_g, ...object_aquarium_2.line_top_color, // 270
+        ...object_aquarium_2.line_top_g, ...object_aquarium_2.line_top_color,
 
         ...object_aquarium_2.line_top_c, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_g, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_f, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_c, ...object_aquarium_2.line_top_color,
         ...object_aquarium_2.line_top_b, ...object_aquarium_2.line_top_color,
-        ...object_aquarium_2.line_top_f, ...object_aquarium_2.line_top_color, // 300
+        ...object_aquarium_2.line_top_f, ...object_aquarium_2.line_top_color,
 
         ...object_aquarium_2.line_mid_a, ...object_aquarium_2.line_mid_color,
         ...object_aquarium_2.line_mid_b, ...object_aquarium_2.line_mid_color,
         ...object_aquarium_2.line_mid_c, ...object_aquarium_2.line_mid_color,
         ...object_aquarium_2.line_mid_a, ...object_aquarium_2.line_mid_color,
         ...object_aquarium_2.line_mid_d, ...object_aquarium_2.line_mid_color,
-        ...object_aquarium_2.line_mid_c, ...object_aquarium_2.line_mid_color, // 330
+        ...object_aquarium_2.line_mid_c, ...object_aquarium_2.line_mid_color,
         
         ...object_aquarium_2.line_bot_a, ...object_aquarium_2.line_bot_color,
         ...object_aquarium_2.line_bot_b, ...object_aquarium_2.line_bot_color,
         ...object_aquarium_2.line_bot_c, ...object_aquarium_2.line_bot_color,
         ...object_aquarium_2.line_bot_a, ...object_aquarium_2.line_bot_color,
         ...object_aquarium_2.line_bot_d, ...object_aquarium_2.line_bot_color,
-        ...object_aquarium_2.line_bot_c, ...object_aquarium_2.line_bot_color, // 360
+        ...object_aquarium_2.line_bot_c, ...object_aquarium_2.line_bot_color,
 
     ];
 
