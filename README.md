@@ -32,5 +32,5 @@ Angle 4 : Kanan Atas
 Pada hasil pengerjaan, gambar yang saya gambar pada sebelah kiri adalah gambar aquarium pada angle <b>Kiri Atas</b>, dan gambar yang saya gambar pada sebelah kanan, yaitu yang bergerak ke atas dan kebawah dengan kecepatan 0.0068 adalah gambar pada angle sebelah <b>Belakang Atas</b>. 
 Hasil pengerjaan yang telah saya buat dapat dilihat pada gambar berikut :
 
-[![ezgif-com-gif-maker.gif](https://i.postimg.cc/Sx1tLcCC/ezgif-com-gif-maker.gif)](https://postimg.cc/CRDNSBvx)
+[![ezgif-com-gif-maker-1.gif](https://i.postimg.cc/Vkg5vZjz/ezgif-com-gif-maker-1.gif)](https://postimg.cc/ZW9JDc7Q)
 
