@@ -15,8 +15,12 @@
         
         // bangun = lingkaran
         // material = meshdepth
+        // light = pointlight
         let createCircle = function() {
                 let geometry = new THREE.CircleGeometry( 1, 100 );
+                let light = new THREE.PointLight(0xffffff, 1);
+                light.position.set(-4, 2, 2);
+                scene.add(light);
                 let material = new THREE.MeshDepthMaterial( { emissive: 0xffff00} );
                 circle = new THREE.Mesh( geometry, material );
                 scene.add( circle );
