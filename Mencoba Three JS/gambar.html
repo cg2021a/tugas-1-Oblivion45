@@ -60,6 +60,16 @@
                 scene.add( torus );
         };
     
+        // bangun = cone
+        // material = meshnormal
+        // wireframe
+        let createCone = function() {
+                const geometry = new THREE.ConeGeometry( 1, 2, 100 );
+                const material = new THREE.MeshNormalMaterial( {color: 0xf5a84, shininess: 100,wireframe : true} );
+                cone = new THREE.Mesh( geometry, material );
+                scene.add( cone );    
+        };
+    
         // set up the environment - 
         // initiallize scene, camera, objects and renderer
         let init = function() {
@@ -80,6 +90,8 @@
             createCylinder();
             createTorus();
             torus.position.x = 1.7;
+            createCone();
+            cone.position.x = 4;
             
             // 4. create the renderer     
             renderer = new THREE.WebGLRenderer();   
@@ -102,6 +114,9 @@
             
             torus.rotation.x += 0.01;
             torus.rotation.y += 0.01;
+            
+            cone.rotation.x += 0.01;
+            cone.rotation.y += 0.01;
             
             renderer.render(scene, camera);
             requestAnimationFrame(mainLoop);
