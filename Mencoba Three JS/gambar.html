@@ -26,6 +26,17 @@
                 scene.add( circle );
         };
     
+        // bangun = knot
+        // material = meshphong
+        // wireframe
+        let createKnot = function(){
+                const geometry = new THREE.TorusKnotGeometry( 0.3, 0.1, 100, 20 );
+                const material = new THREE.MeshPhongMaterial( { color: 0x4f438, wireframe:true} );
+                torusKnot = new THREE.Mesh( geometry, material );
+                scene.add( torusKnot );
+
+        };
+    
         // set up the environment - 
         // initiallize scene, camera, objects and renderer
         let init = function() {
@@ -41,6 +52,8 @@
             // 3. create an locate the object on the scene           
             createCircle();
             circle.position.x = -4;
+            createKnot();
+            torusKnot.position.x = -1.7;
             
             // 4. create the renderer     
             renderer = new THREE.WebGLRenderer();   
@@ -54,6 +67,10 @@
         let mainLoop = function() {
             circle.rotation.x += 0.01;
             circle.rotation.y += 0.01;
+            
+            torusKnot.rotation.x += 0.01;
+            torusKnot.rotation.y += 0.01;
+            
             renderer.render(scene, camera);
             requestAnimationFrame(mainLoop);
         };
