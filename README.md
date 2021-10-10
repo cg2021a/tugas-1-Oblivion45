@@ -41,3 +41,14 @@ Hasil pengerjaan yang telah saya buat dapat dilihat pada gambar berikut :
 1. Buat dan tampilkan beberapa geometri dan diberi animasi, beberapa obyek ditampilkan wireframe
 2. Gunakan beberapa jenis material 
 3. gunakan beberapa jenis lighting (AmbientLight, HemisphereLight, DirectionalLight, PointLight, Spotlights)
+
+Bangun yang saya buat :
+1. Lingkaran (Circle) dengan menggunakan material meshdepth dan pointlight
+2. TorusKnot dengan menggunakan material meshphong dan tampilan wireframe
+3. Silinder (Cylinder) dengan menggunakan material meshtoon dan hemisphere light
+4. Torus dengan menggunakan material meshbasic dan menggunakan texture image doughnut.jpg
+5. Cone dengan menggunakan material meshnormal dan tampilan wireframe
+
+<b>Gambar hasil pengerjaan : </b>
+
+[![ezgif-com-gif-maker-3.gif](https://i.postimg.cc/3JVp4fz2/ezgif-com-gif-maker-3.gif)](https://postimg.cc/N58LZDs0)
