@@ -49,6 +49,17 @@
                 scene.add( cylinder );
         };
     
+        // bangun = Torus
+        // material = meshbasic
+        // texture = donut
+        let createTorus = function(){
+                const geometry = new THREE.TorusGeometry( 0.3, 0.2, 16, 100 );
+                const texture = new THREE.TextureLoader().load('doughnut.jpg');
+                const material = new THREE.MeshBasicMaterial( { map : texture } );
+                torus = new THREE.Mesh( geometry, material );
+                scene.add( torus );
+        };
+    
         // set up the environment - 
         // initiallize scene, camera, objects and renderer
         let init = function() {
@@ -67,6 +78,8 @@
             createKnot();
             torusKnot.position.x = -1.7;
             createCylinder();
+            createTorus();
+            torus.position.x = 1.7;
             
             // 4. create the renderer     
             renderer = new THREE.WebGLRenderer();   
@@ -86,6 +99,9 @@
             
             cylinder.rotation.x += 0.01;
             cylinder.rotation.y += 0.01;
+            
+            torus.rotation.x += 0.01;
+            torus.rotation.y += 0.01;
             
             renderer.render(scene, camera);
             requestAnimationFrame(mainLoop);
