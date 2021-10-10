@@ -7,6 +7,7 @@ NRP  : 05111940000068
 Kelas: Grafkom A 
 </b>
 
+## Menggambar 2 Dimensi
 Memfoto Benda yang berawalan Huruf A, F, K dengan 4 angle, yaitu depan atas, belakang atas, kiri ataas dan kanan atas.
 
 Nama Benda : Akuarium
@@ -34,3 +35,9 @@ Hasil pengerjaan yang telah saya buat dapat dilihat pada gambar berikut :
 
 [![ezgif-com-gif-maker-1.gif](https://i.postimg.cc/Vkg5vZjz/ezgif-com-gif-maker-1.gif)](https://postimg.cc/ZW9JDc7Q)
 
+
+## Mencoba Three JS
+
+1. Buat dan tampilkan beberapa geometri dan diberi animasi, beberapa obyek ditampilkan wireframe
+2. Gunakan beberapa jenis material 
+3. gunakan beberapa jenis lighting (AmbientLight, HemisphereLight, DirectionalLight, PointLight, Spotlights)
