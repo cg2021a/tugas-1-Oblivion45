@@ -37,6 +37,18 @@
 
         };
     
+        // bangun = silinder
+        // material = meshtoon
+        // light = hemisphere
+        let createCylinder = function(){
+                const geometry = new THREE.CylinderGeometry( 0.5, 0.5, 2, 100 );
+                const material = new THREE.MeshToonMaterial( {color: 0xffff00} );
+                const light = new THREE.HemisphereLight( 0xffffbb, 0xff0000, 1 );
+                scene.add( light );
+                cylinder = new THREE.Mesh( geometry, material );
+                scene.add( cylinder );
+        };
+    
         // set up the environment - 
         // initiallize scene, camera, objects and renderer
         let init = function() {
@@ -54,6 +66,7 @@
             circle.position.x = -4;
             createKnot();
             torusKnot.position.x = -1.7;
+            createCylinder();
             
             // 4. create the renderer     
             renderer = new THREE.WebGLRenderer();   
@@ -70,6 +83,9 @@
             
             torusKnot.rotation.x += 0.01;
             torusKnot.rotation.y += 0.01;
+            
+            cylinder.rotation.x += 0.01;
+            cylinder.rotation.y += 0.01;
             
             renderer.render(scene, camera);
             requestAnimationFrame(mainLoop);
